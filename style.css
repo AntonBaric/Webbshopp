@@ -1,0 +1,99 @@
+/*
+
+CSS-regel:
+Selector som väljer ut vilket / vilka element vi ska påverka
+Egenskap (Property) som vi kan ändra på elementet
+
+selector{
+    property-name: property-value;
+    property-name-2: property-value-2;
+}
+
+selector{
+    egenskapsnamn: egenskapsvärde;
+}
+
+specificitet (specificity)
+
+element > other-element (direkt arv, endast direkt underliggande element)
+
+element other-element ("öppet" arv, alla underliggande element)
+
+padding: top right bottom left;
+border-width: top right bottom left;
+
+*/
+
+body{
+    background-color: bisque;
+    background-image: url(images/smile2.png);
+    padding: 2vh 2vw;
+    min-height: 200vh;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top>div, .header-top>a{
+    width: 20%;
+}
+
+.header-top>div>img, .header-top>a>img{
+    width: 100%;
+}
+
+header{
+    background-color: rgba(255,255,255,0.5);
+    padding: 2vh 2vw;
+    border-radius: 15px 15px 0 0;
+}
+
+header>img{
+    width: 50px;
+}
+
+main{
+    background-color: rgba(255,255,255,0.5);
+    padding: 2vh 2vw;
+    border-radius: 0 0 15px 15px;
+}
+
+section>article{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+}
+
+section>article h2{
+    font-size: 120%;
+}
+
+article h2{
+    font-size: 200%;
+}
+
+article>div{
+    margin-left: 2vw;
+    flex-grow: 1;
+}
+
+section>article>a{
+    width: 25%;
+}
+
+article>a>img{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+article .price{
+    text-align: right;
+}
+
+button.price{
+    font-size: 110%;
+}
