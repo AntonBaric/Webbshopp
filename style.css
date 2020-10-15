@@ -25,7 +25,6 @@ border-width: top right bottom left;
 */
 
 body{
-    background-color: bisque;
     background-image: url(images/smile2.png);
     padding: 2vh 2vw;
     min-height: 200vh;
@@ -37,7 +36,11 @@ body{
     align-items: center;
 }
 
-.header-top>div, .header-top>a{
+.header-top>a{
+    width: 20%;
+}
+
+.header-top>div{
     width: 20%;
 }
 
@@ -47,7 +50,7 @@ body{
 
 header{
     background-color: rgba(255,255,255,0.5);
-    padding: 2vh 2vw;
+    padding-left: 25px 50px 550px;
     border-radius: 15px 15px 0 0;
 }
 
@@ -90,10 +93,11 @@ article>a>img{
     border-radius: 15px;
 }
 
-article .price{
+article.price{
     text-align: right;
 }
 
-button.price{
+.price{
     font-size: 110%;
 }
+
