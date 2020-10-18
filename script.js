@@ -1,9 +1,10 @@
 function addToCart() {
     alert('added to cart')
+    document.querySelector('.cart>img').src = "images/amount/1.png"
 }
 
-const searchInput = document.getElementById("search")
-
-searchInput.addEventListener ("input", () => {
-    console.log("input event fired");
-});
+function searchButton() {
+    var str = "Visit";
+    var n = str.search("Visit");
+    document.getElementById("demo").innerHTML = n;
+}

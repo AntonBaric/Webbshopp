@@ -25,7 +25,7 @@ border-width: top right bottom left;
 */
 
 body{
-    background-image: url(images/smile2.png);
+    background-image: url(images/blueblocks.png);
     padding: 2vh 2vw;
     min-height: 200vh;
 }
@@ -34,6 +34,12 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.search-button {
+    position: absolute;
+    right: 200px;
+
 }
 
 .header-top>a{
